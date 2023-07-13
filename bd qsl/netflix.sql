@@ -26,3 +26,12 @@ lastname VARCHAR (45) NOT NULL,
 country VARCHAR(45) NOT NULL,
 year_birthday INT,
 PRIMARY KEY (idActor));
+
+CREATE TABLE rel_movies_users(
+id INT AUTO_INCREMENT NOT NULL,
+idUser INT NOT NULL,
+idMovie INT NOT NULL,
+PRIMARY KEY (id));
+
+//AÑADIR UNA PUNTUACION A UNA PELICULA//
+UPDATE `freedb_freedbdatabase_netflix`.`rel_movies_users` SET `score` = '9' WHERE (`id` = '6');
