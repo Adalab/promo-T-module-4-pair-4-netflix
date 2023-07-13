@@ -35,3 +35,9 @@ PRIMARY KEY (id));
 
 //AÑADIR UNA PUNTUACION A UNA PELICULA//
 UPDATE `freedb_freedbdatabase_netflix`.`rel_movies_users` SET `score` = '9' WHERE (`id` = '6');
+
+//AÑADIR relacion pelis con actors//
+
+INSERT INTO `freedb_freedbdatabase_netflix`.`rel_movies_actors` (`idActor`, `idMovie`) VALUES ('3', '1');
+INSERT INTO `freedb_freedbdatabase_netflix`.`rel_movies_actors` (`idActor`, `idMovie`) VALUES ('2', '2');
+INSERT INTO `freedb_freedbdatabase_netflix`.`rel_movies_actors` (`idActor`, `idMovie`) VALUES ('1', '3');
