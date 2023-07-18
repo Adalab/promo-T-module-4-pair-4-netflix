@@ -1,5 +1,6 @@
 const express = require('express');
 const cors = require('cors');
+const mysql2 = require('mysql2/promise');
 
 // create and config server
 const server = express();
@@ -16,9 +17,9 @@ server.listen(serverPort, () => {
 async function getConnection() { //esto devuelve una promesa // los await are equivalente a los "then" del fetch
   const connection = await mysql2.createConnection({
       host: 'sql.freedb.tech',
-      database: 'freedb_project molones',
-      user: 'freedb_Group2',
-      password: 'nnDTSJ#mTwUg?7W',
+      database: 'freedb_freedbdatabase_netflix',
+      user: 'freedb_freedb_crisv',
+      password: 'SuSZM@r73Gkjz&*',
   
   });
 
