@@ -32,3 +32,17 @@ async function getConnection() { //esto devuelve una promesa // los await are eq
 }
 
 getConnection()
+
+server.get("/movies", async (req, res)=>{
+    
+    const select =  'SELECT * FROM movies';  
+    const connect = await getConnection(); 
+    const [result] = await connect.query(select); 
+ 
+    res.json({
+      succes:true,
+      movies :result
+    }); 
+  })
+
+  
