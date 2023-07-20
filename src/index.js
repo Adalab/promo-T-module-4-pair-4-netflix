@@ -40,7 +40,7 @@ server.get("/movies", async (req, res)=>{
     const [result] = await connect.query(select); 
  
     res.json({
-      succes:true,
+      success:true,
       movies :result
     }); 
   })
